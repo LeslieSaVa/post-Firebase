@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/grid.css">
+
+</head>
+<body>
+
+        <header id="mainMenu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                      <a class="menu" id="logo" href="#home"><img src="IMG/logo-happy-alergies.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <h2>Deja tus comentarios aqui</h2>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <!--aqui van las imagenes-->
+                <div id="imagenes-de-FB"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+               <label class="custom-file-upload">
+                <input type="file" name="fichero" value="" id="fichero"/>
+                <i class="material-icons">add</i>
+               </label> 
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="newcoments"></div>
+
+    <form action="" id="form-information">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <label for="name">Nombre</label>
+                <input type="text" name="nombre" id="nombreaconvalidar">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <label for="title">Titulo</label>
+                <input type="text" name="titulo" id="tituloaconvalidar">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <textarea name="comentario" id="coments" cols="30" rows="10" placeholder="Escribe aqui tu comentario..."></textarea>
+                <br>
+                <input type="submit" value="Crear Comentario" id="btn-coments">
+            </div>
+        </div>
+    </div>
+    </form>
+ 
+ <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-storage.js"></script>
+ <script src="app.js"></script>   
+</body>
+</html>

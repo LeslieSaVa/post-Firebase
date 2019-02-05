@@ -1,0 +1,22 @@
+header {
+    background-color: beige;
+} 
+
+.menu {
+    text-align: center;
+    padding: 2% 4%;
+}
+#fichero{
+    display: none;
+}
+.custom-file-upload{
+    cursor: pointer;
+    display: inline-block;
+    
+}
+.img{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+}
